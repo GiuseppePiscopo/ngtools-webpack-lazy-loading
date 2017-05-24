@@ -7,11 +7,9 @@
     "build": "webpack",
     "build-with-dll": "set USE_DLL=true&& webpack",
     "aot": "set AOT=true&& webpack",
-    "aot-with-dll": "set AOT=true&& set USE_DLL=true&& webpack",
     "serve": "webpack-dev-server",
     "serve-with-dll": "set USE_DLL=true webpack-dev-server",
-    "serve-aot": "set AOT=true&& webpack-dev-server",
-    "serve-aot-with-dll": "set AOT=true&& set USE_DLL=true&& webpack-dev-server"
+    "serve-aot": "set AOT=true&& webpack-dev-server"
   },
   "author": "tmeneau@xetus.com",
   "license": "ISC",
