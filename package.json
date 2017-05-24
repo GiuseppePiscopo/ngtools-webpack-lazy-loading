@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "build-with-dll": "USE_DLL=true webpack",
-    "aot": "AOT=true webpack",
-    "aot-with-dll": "AOT=true USE_DLL=true webpack",
+    "build-with-dll": "set USE_DLL=true&& webpack",
+    "aot": "set AOT=true&& webpack",
+    "aot-with-dll": "set AOT=true&& set USE_DLL=true&& webpack",
     "serve": "webpack-dev-server",
-    "serve-with-dll": "USE_DLL=true webpack-dev-server",
-    "serve-aot": "AOT=true webpack-dev-server",
-    "serve-aot-with-dll": "AOT=true USE_DLL=true webpack-dev-server"
+    "serve-with-dll": "set USE_DLL=true webpack-dev-server",
+    "serve-aot": "set AOT=true&& webpack-dev-server",
+    "serve-aot-with-dll": "set AOT=true&& set USE_DLL=true&& webpack-dev-server"
   },
   "author": "tmeneau@xetus.com",
   "license": "ISC",
